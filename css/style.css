@@ -1,0 +1,98 @@
+/* Liz Bright - css for Assignment 3 */
+
+body {
+    background-color: grey;
+    font-family: Baskerville, Georgia, Cambria, serif;
+    font-size: 100%;
+    margin: 0 auto;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+header {
+    background-color: #393939;
+    color: orange;
+    padding-top: 1em;
+    padding-bottom: 2.5em;
+    overflow: hidden;
+    height: 70px;
+    min-width: 100%;
+}
+
+header h1, h2 {
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+header h1 {
+    font-size: 2.8em;
+}
+
+header h2 {
+    font-size: 2em;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.bgimg {
+    background-image: url("https://s3.amazonaws.com/eabdgmde15/pomes_images/fall/fall1.jpg");
+    height: 685px;
+    position: relative;
+}
+
+/* css left side */
+
+.form {
+    background-color: #FFF6E6;
+    border: 2px solid grey;
+    border-radius: 5px;
+    margin-bottom: 35px;
+    margin-left: 160px;
+    padding: 35px 25px 5px 25px;
+    overflow: auto;
+    top: 50px;
+    height: 400px;
+    width: 380px;
+    position: absolute;
+}
+
+legend {
+    color: orange;
+    font-weight: bold;
+    font-size: 1.75em;
+    margin-bottom: -1em;
+}
+
+#clickSeason {
+    font-size: 1em;
+    font-weight: bold;
+    position: absolute;
+    left: 30;
+    top: 75;
+}
+
+#selectSeason {
+    font-size: 1em;
+    font-weight: bold;
+    position: absolute;
+    left: 30;
+    top: 175;
+}
+
+/* css footer */
+
+footer {
+    background-color: #393939;
+    clear: all;
+    color: white;
+    height: 50px;
+}
+
+footer p {
+    float: right;
+    margin-right: 150px;
+}
