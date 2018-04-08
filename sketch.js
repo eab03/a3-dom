@@ -11,8 +11,8 @@ let imgSpring2;
 function preload() {
     imgSpring = loadImage('images/spring2.jpg');
     imgSummer = loadImage('images/summer2.jpg');
-    imgFall = loadImage('images/fall5.jpg');
-    imgWinter = loadImage('images/winter1.jpg');
+    imgFall = loadImage('images/fall1.jpg');
+    imgWinter = loadImage('images/winter2.jpg');
     imgSpring2 = loadImage('images/spring3.jpg');
 }
 
@@ -54,11 +54,11 @@ function setup() {
     // https://vimeo.com/channels/learningp5js/142698163
     quoteButton = createButton('click me');
     quoteButton.position(200, 300);
-    quoteButton.mousePressed(changeBG);
-
-}
+    quoteButton.mousePressed(changeQuote);
+} // close function setup
 
 function draw() {}
+
 // LOAD SPECIFIC IMAGE WHEN THE DROPDOWN IS SELECTED
 // https://p5js.org/examples/image-load-and-display-image.html
 // https://processing.org/reference/PImage_resize_.html
@@ -75,23 +75,23 @@ function mySelectEvent() {
         });
         quoteSelect.html("");
     } else if (selected === 'fall') {
-        loadImage('images/fall5.jpg', function(imgFall) {
+        loadImage('images/fall1.jpg', function(imgFall) {
             image(imgFall, 0, 0, imgFall.width / 7.5, imgFall.height / 7.5);
         });
         quoteSelect.html("");
     } else if (selected === 'winter') {
-        loadImage('images/winter1.jpg', function(imgWinter) {
+        loadImage('images/winter2.jpg', function(imgWinter) {
             image(imgWinter, 0, 0, imgWinter.width / 7.5, imgWinter.height / 7.5);
         });
         quoteSelect.html("");
     }
-}
+} // close function mySelectEvent
 
 // WHEN CLICK ON THE BUTTON CHANGE THE STYLE AND TEXT OF THE QUOTATION
 /*
 / 5. style() a DOM element with CSS from within P5
 */
-function changeBG() {
+function changeQuote() {
     let seasons = ['spring', 'summer', 'fall', 'winter'];
     let season = random(seasons); // select random word
     if (season == 'spring') {
@@ -111,6 +111,4 @@ function changeBG() {
         quoteSelect.html("“People don't notice whether it's winter or summer<br>when they're happy.”<br><br>― Anton Chekhov");
         quoteSelect.style('color', '#191970');
     }
-
-
-}
+} // close function changeQuote

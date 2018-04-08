@@ -1,4 +1,5 @@
 /* Liz Bright - css for Assignment 3 */
+/* Please note this is currently styled to be best viewed on a laptop */
 
 body {
     background-color: grey;
@@ -14,9 +15,8 @@ header {
     color: orange;
     padding-top: 1em;
     padding-bottom: 2.5em;
-    overflow: hidden;
     height: 70px;
-    min-width: 100%;
+    width: 100%;
 }
 
 header h1, h2 {
@@ -35,14 +35,11 @@ header h2 {
 }
 
 .wrapper {
-    width: 100%;
-}
-
-.bgimg {
-    background-image: url("https://s3.amazonaws.com/eabdgmde15/pomes_images/fall/fall1.jpg");
     height: 685px;
+    width: 100%;
     position: relative;
 }
+
 
 /* css left side */
 
@@ -70,17 +67,17 @@ legend {
 #clickSeason {
     font-size: 1em;
     font-weight: bold;
-    position: absolute;
     left: 30;
     top: 75;
+    position: absolute;
 }
 
 #selectSeason {
     font-size: 1em;
     font-weight: bold;
-    position: absolute;
     left: 30;
     top: 175;
+    position: absolute;
 }
 
 /* css footer */
@@ -90,9 +87,15 @@ footer {
     clear: all;
     color: white;
     height: 50px;
+    width: 100%;
 }
 
-footer p {
+#left {
+    float: left;
+    margin-left: 165px;
+}
+
+#right {
     float: right;
     margin-right: 150px;
 }
